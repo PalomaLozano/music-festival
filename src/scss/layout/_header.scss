@@ -6,6 +6,9 @@
 }
 
 .navegacion-principal {
+  @include telefono {
+    background-color: yellow;
+  }
   a {
     color: $blanco;
     font-size: 2.4rem;
@@ -13,8 +16,4 @@
       color: $amarillo;
     }
   }
-}
-
-.prueba {
-  @include heading;
 }
