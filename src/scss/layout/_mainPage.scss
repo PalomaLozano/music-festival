@@ -1,0 +1,19 @@
+.sobre-festival {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5rem;
+  padding: 5rem;
+}
+
+.contenido-festival {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h2 {
+    margin-bottom: 2rem;
+  }
+  .fecha {
+    color: $verdeAqua;
+    font-weight: 700;
+  }
+}
