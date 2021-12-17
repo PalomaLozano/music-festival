@@ -32,7 +32,7 @@
   }
   .dia {
     text-transform: uppercase;
-    margin-bottom: 5rem;
+    margin: 5rem 0;
   }
 }
 
@@ -67,8 +67,25 @@
   background-image: url(../../assets/images/img/icono_rock.png);
 }
 .bg-amarillo {
-  background-color: rgb(230, 212, 51);
+  background-color: rgb(235, 222, 107);
+  li:nth-child(odd) {
+    background-color: darken(rgb(235, 222, 107), 10%);
+  }
 }
 .bg-verde {
   background-color: rgb(108, 221, 183);
+  li:nth-child(odd) {
+    background-color: darken(rgb(108, 221, 183), 10%);
+  }
+}
+
+.calendario {
+  @include resetList;
+  li {
+    padding: 2.5rem;
+    font-weight: 700;
+    span {
+      font-weight: 400;
+    }
+  }
 }
