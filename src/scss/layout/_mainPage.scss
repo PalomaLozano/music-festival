@@ -59,6 +59,13 @@
     }
   }
 }
+
+.edm .nombre-escenario:after {
+  background-image: url(../../assets/images/img/icono_edm.png);
+}
+.rock .nombre-escenario:after {
+  background-image: url(../../assets/images/img/icono_rock.png);
+}
 .bg-amarillo {
   background-color: rgb(230, 212, 51);
 }
