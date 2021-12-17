@@ -1,12 +1,18 @@
 .sobre-festival {
-  @include grid(2, 5rem);
-  padding: 5rem;
+  padding: 5rem 0;
+  @include tablet {
+    @include grid(2, 5rem);
+  }
 }
 
 .contenido-festival {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 5rem;
+  @include tablet {
+    margin-top: 0px;
+  }
   h2 {
     margin-bottom: 2rem;
   }
@@ -14,4 +20,48 @@
     color: $verdeAqua;
     font-weight: 700;
   }
+}
+
+.lineUp {
+  background-color: $verdeAqua;
+  padding: 5rem 0;
+  h3,
+  p {
+    text-align: center;
+    color: $blanco;
+  }
+  .dia {
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+  }
+}
+
+.escenarios-contenedor {
+  @include tablet {
+    @include grid(2, 5rem);
+  }
+  p {
+    color: $negro;
+  }
+}
+.escenario {
+  padding-top: 2rem;
+  p {
+    &:after {
+      content: '';
+      display: block;
+      width: 20rem;
+      height: 10rem;
+      background-size: 15rem;
+      background-repeat: no-repeat;
+      background-position: center center;
+      margin: 2rem auto 0 auto;
+    }
+  }
+}
+.bg-amarillo {
+  background-color: rgb(230, 212, 51);
+}
+.bg-verde {
+  background-color: rgb(108, 221, 183);
 }
