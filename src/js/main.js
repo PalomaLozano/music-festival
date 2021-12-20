@@ -8,6 +8,7 @@ function iniciarApp() {
   crearGaleria();
   scrollNav();
 }
+
 function scrollNav() {
   const enlaces = document.querySelectorAll('.navegacion-principal a');
   enlaces.forEach((enlace) => {

@@ -1,4 +1,5 @@
 .boletos {
+  background-color: $verdeAqua;
   padding: 5rem 0;
   h3 {
     text-align: center;
@@ -27,7 +28,7 @@
     }
   }
   &-header {
-    background-color: #257966;
+    background-color: rgb(83, 24, 24);
     p {
       text-transform: uppercase;
       font-size: 1.6rem;
@@ -46,7 +47,7 @@
     }
   }
   &-footer {
-    background-color: #1b3f36;
+    background-color: rgb(83, 24, 24);
     p {
       font-weight: 700;
       font-size: 2.4rem;

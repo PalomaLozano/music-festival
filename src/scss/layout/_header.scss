@@ -1,8 +1,13 @@
 .header {
-  width: 100%;
+  @include tablet {
+    width: 100%;
+    position: fixed;
+    z-index: 30;
+  }
+
   background-color: $verdeAqua;
-  position: fixed;
-  z-index: 30;
+  box-shadow: 0.3rem 0.3rem 0.3rem rgb(83, 24, 24);
+
   h1 {
     color: $blanco;
     text-align: center;
