@@ -2,67 +2,118 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock & EDM Festival</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
   </head>
-
   <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
-
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
-        </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
-
-          </li>
-        </ul>
-      </main>
-
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
-        </small>
-      </footer>
-
+    <header class="header">
+      <div class="contenedor contenido-header">
+        <h1>Rock & EDM Festival</h1>
+        <nav class="navegacion-principal">
+          <a href="#">Line Up</a>
+          <a href="#">Galería</a>
+          <a href="#">Tickets</a>
+        </nav>
+      </div>
+    </header>
+    <div class="container-Banner">
+      <div class="overlay">
+        <h2 class="festivalBanner">Rock & EDM Festival</h2>
+        <p class="timeBanner">Julio 2022, Madrid</p>
+      </div>
+      <img
+        src="assets/images/img/resumen.jpg"
+        alt="festival image"
+        class="img-Banner"
+      />
     </div>
+
+    <section class="contenedor sobre-festival">
+      <div class="imagen">
+        <img
+          src="assets/images/img/imagen_vocalista.jpg"
+          alt="imagen vocalista
+        festival"
+        />
+      </div>
+      <div class="contenido-festival">
+        <h2>Rock & EDM Festival</h2>
+        <p class="fecha">Julio 2022, Madrid</p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum quasi
+          tempora ipsum provident, rem incidunt dolorum assumenda atque nihil?
+          Exercitationem quam adipisci ipsam quis, fugiat laboriosam eveniet
+          inventore expedita optio.
+        </p>
+      </div>
+    </section>
+    <section class="lineUp">
+      <h3>Line Up</h3>
+      <p class="dia">Viernes 21</p>
+      <div class="escenarios-contenedor contenedor">
+        <div class="escenario rock bg-amarillo">
+          <p class="nombre-escenario">Escenario Rock</p>
+          <ul class="calendario">
+            <li>00:00 | <span>Metallica</span></li>
+            <li>22:00 | <span>Pearl Jam</span></li>
+            <li>20:00 | <span>KoRn</span></li>
+            <li>19:00 | <span>Muse</span></li>
+            <li>18:00 | <span>Breaking Benjamin</span></li>
+            <li>17:00 | <span>30 seconds to Mars</span></li>
+          </ul>
+        </div>
+        <div class="escenario edm bg-verde">
+          <p class="nombre-escenario">Escenario EDM</p>
+          <ul class="calendario">
+            <li>00:00 | <span>Deadmau5</span></li>
+            <li>22:00 | <span>Tïesto</span></li>
+            <li>20:00 | <span>Hardwell</span></li>
+            <li>19:00 | <span>Dash Berlin</span></li>
+            <li>18:00 | <span>Fede Legrand</span></li>
+            <li>17:00 | <span>Audien</span></li>
+          </ul>
+        </div>
+      </div>
+      <p class="dia">Sábado 22</p>
+      <div class="escenarios-contenedor contenedor">
+        <div class="escenario rock bg-verde">
+          <p class="nombre-escenario">Escenario Rock</p>
+          <ul class="calendario">
+            <li>00:00 | <span>Red Hot Chili Peppers</span></li>
+            <li>22:00 | <span>The Killers</span></li>
+            <li>20:00 | <span>Deftones</span></li>
+            <li>19:00 | <span>Limp Bizkit</span></li>
+            <li>18:00 | <span>Papa Roach</span></li>
+            <li>17:00 | <span>Lamb of God</span></li>
+          </ul>
+        </div>
+        <div class="escenario edm bg-amarillo">
+          <p class="nombre-escenario">Escenario EDM</p>
+          <ul class="calendario">
+            <li>00:00 | <span>Paul Van Dyk</span></li>
+            <li>22:00 | <span>Armin Van Buuren</span></li>
+            <li>20:00 | <span>Above & Beyond</span></li>
+            <li>19:00 | <span>Eric Prdyz</span></li>
+            <li>18:00 | <span>Ferry Corsten</span></li>
+            <li>17:00 | <span>Vini Vici</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="galeria contenedor">
+      <h3>Galería</h3>
+      <ul class="galeria-imagenes"></ul>
+    </section>
+
+    
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
